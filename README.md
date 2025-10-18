@@ -12,14 +12,14 @@ Dieses Repository enthält ein Python-Programm, das mit [Flask](https://flask.pa
 
 <br>
 
-Abhängigkeiten installieren und Ausführen (Variante 1):
+Abhängigkeiten installieren und ausführen (Variante 1):
 ```
 pip install -r requirements.txt
 ```
 
 <br>
 
-Abhängigkeiten installieren und Ausführen (Variante 2):
+Abhängigkeiten installieren und ausführen (Variante 2):
 ```
 py -m pip install -r requirements.txt
 ```
@@ -36,6 +36,17 @@ python bmi_app.py
 Beispielaufe bei lokaler Ausführung:
 * http://localhost:8080/bmi?kg=75&cm=180
 * http://localhost:8080/bmi?kg=110&cm=175
+
+<br>
+
+Beispiel für JSON-Antwort:
+```
+{
+    "bmi"      : 23.1,
+    "erfolg"   : true,
+    "nachricht": "Normalgewicht"
+}
+```
 
 <br>
 
