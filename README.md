@@ -26,6 +26,13 @@ py -m pip install -r requirements.txt
 
 <br>
 
+Nachschauen, welche Version von *Flask* installiert wurde:
+```
+py -m pip show Flask
+```
+
+<br>
+
 Programm starten:
 ```
 python bmi_app.py
