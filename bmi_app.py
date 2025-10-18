@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from os import getenv
 
 app = Flask(__name__)
 
@@ -69,8 +70,7 @@ def bmi():
     }), HTTP_STATUS_OK
 
 
-if __name__ == "__main__":
-    from os import getenv
+if __name__ == "__main__":    
     port = int(getenv("PORT", "8080"))
     # Bind to all interfaces so Docker port mapping works
     app.run(host="0.0.0.0", port=port)
