@@ -52,6 +52,27 @@ Beispiel für JSON-Antwort:
 
 ----
 
+## Docker-Image bauen und ausführen ##
+
+<br>
+
+Image anhand [Dockerfile](Dockerfile) bauen:
+```
+docker build -t python-bmi-api .
+```
+
+<br>
+
+
+Container für Image erzeugen und starten
+```
+docker run -p 8080:8080 python-bmi-api
+```
+
+<br>
+
+----
+
 ## License ##
 
 <br>
