@@ -69,6 +69,8 @@ def bmi():
     }), HTTP_STATUS_OK
 
 
-if __name__ == '__main__':
-    # Development server; use env/WSGI for production
-    app.run(port=PORT_NUMMER)
+if __name__ == "__main__":
+    from os import getenv
+    port = int(getenv("PORT", "8080"))
+    # Bind to all interfaces so Docker port mapping works
+    app.run(host="0.0.0.0", port=port)

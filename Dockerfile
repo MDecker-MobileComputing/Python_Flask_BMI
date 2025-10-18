@@ -16,9 +16,5 @@ COPY bmi_app.py .
 # Expose the port the app runs on
 EXPOSE 8080
 
-# Set environment variables for Flask
-ENV FLASK_APP=bmi_app.py
-ENV PYTHONUNBUFFERED=1
-
 # Run the application
 CMD ["python", "bmi_app.py"]
