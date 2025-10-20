@@ -73,7 +73,7 @@ docker build -t python-bmi-api .
 
 Container für Image erzeugen und starten
 ```
-docker run -p 8080:8080 python-bmi-api
+docker run --name python-bmi -p 8080:8080 python-bmi-api
 ```
 
 <br>
